@@ -10,5 +10,20 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
+    
+    function firstQuestion(q1Result){
+        if (q1Result==="English"){
+            return 3;
+        }else if (q1Result==="Math"){
+            return 6;
+        }else if (q1Result==="History"){
+            return 2;
+        }else if (q1Result==="Science"){
+            return 6;
+        }else{
+            return 4
+        }
+    }
 
+    
 });
